@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<script src="jquery-3.6.0.min.js"></script>
+	<title></title>
+</head>
+<body>
+
+	<div class="container">
+		<form>
+			<!-- Etat civil -->
+			<div class="row">
+				<label>Etat civil</label>
+				<select class="nom_complet"  id="one">
+					<option value="m">M.</option>
+					<option value="mme">Mme</option>
+				</select>
+			</div>
+			<!-- nom -->
+			<div class="row">
+				<label>Nom</label>
+				<input type="text" name="" placeholder="Nom" class="nom_complet verifButt one" id="two">
+			</div>
+			<!-- Prenom -->
+			<div class="row">
+				<label>Prenom</label>
+				<input type="text" name="" placeholder="Prenom" class="nom_complet verifButt two" id="three">
+			</div>
+			<!--Nom compelt-->
+			<div class="row">
+				<label>Nom complet</label>
+				<input type="text" name="" placeholder="Nom complet" id="nom_complet">
+			</div>
+			<!-- dateNai -->
+			<div class="row">
+				<label>Date Naissan</label>
+				<input type="date" name="" min="1920-01-01" max="2005-01-02">
+			</div>
+			<!-- niveauJS -->
+			<div class="row">
+				<label>Niveau en javascript</label>
+				<input type="range" id="niveau" name="niveau" value="50"><span id="niveauS"></span>
+			</div>
+			<!-- couleur -->
+			<div class="row" id="color">
+				<label>Couleur prefree</label>
+				 <input type="color" id="head" name="head"
+	           value="#e66465">
+			</div>
+			<!-- password -->
+			<div class="row">
+				<label>Mot de passe</label>
+				<input type="password" id="pass" name="password" minlength="8" required placeholder="Password" class="verifButt three">
+			</div>
+			<!--confirmation password -->
+			<div class="row">
+				<label>Mot de passe(confiramation)</label>
+				<input type="password" placeholder="Confirm Password" id="confirm_password" class="verifButt four" required>
+			</div>
+			<!--Afficher mot de passe-->
+			<div class="row" id="confim-pass">
+				   <label for="checkbox">
+	               <input type="checkbox" id="checkbox">Afficher le mot de passe </label>
+				
+			</div>
+			<!--descrpition-->
+			<div class="row" id="label_description">
+				<label>Description</label>
+			</div>
+			<div class="row">
+	            <!-- <input type="text" name="message"  required maxlength="500" placeholder="Description"></input> -->
+	            <textarea class="verifButt five"></textarea>
+			</div>
+			<div class="row" id="row_btn">
+				<button id="reinitialiser">Reinitialiser</button>
+				<button id="envoyer">Envoyer</button>
+			</div>
+		</form>
+		<!-- Message -->
+		<h1 class="message"></h1>
+	</div>
+<script src="script.js"></script>
+</body>
+</html>
